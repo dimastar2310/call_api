@@ -1,0 +1,27 @@
+@import url(./_reset.css);
+@import url(./_base.css);
+@import url(./_typography.css);
+
+/* ---------------------------------- */
+
+:root {
+  --hover-text-color: royalblue;
+  --inner-text-color: indigo;
+  --canvas-border-color: deeppink;
+  --header-shadow-color: deeppink;
+}
+body {
+  background-color: papayawhip;
+}
+h1.header {
+  margin-top: 5vh;
+  text-align: center;
+  cursor: pointer;
+  color: var(--inner-text-color);
+  text-shadow: 0px 0px 5px var(--header-shadow-color);
+  transition: text-shadow 300ms, color 300ms;
+}
+h1.header:hover {
+  text-shadow: 0px 0px 15px skyblue;
+  color: var(--hover-text-color);
+}
